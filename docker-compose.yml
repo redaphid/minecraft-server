@@ -6,11 +6,12 @@ services:
     ports:
       - 25565:25565
     environment:
+      MEMORY: "8G"
       EULA: "TRUE"
       VERSION: "1.19.2"
       TYPE: "SPIGOT"
       SPIGOT_RESOURCES: "64348,9089"
-      MOTD: "Hopefully Sarita doesn't hack my server"
+      MOTD: "Ur welcome Sarita :)"
     tty: true
     restart: unless-stopped
     volumes:
