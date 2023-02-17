@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      VERSION: "1.19.2"
+      SPIGOT_RESOURCES: "https://www.spigotmc.org/resources/1-8-1-16-5-essentialsx-2-19-0-1-8-8-1-12-2-1-16-5.9089/"
+    tty: true
+    restart: unless-stopped
+    volumes:
+      # attach a directory relative to the directory containing this compose file
+      - ./data/data:/data
+      - ./data/minecraft:/.minecraft
