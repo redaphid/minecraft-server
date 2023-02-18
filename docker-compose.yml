@@ -10,11 +10,13 @@ services:
       EULA: "TRUE"
       VERSION: "1.19.2"
       TYPE: "SPIGOT"
-      SPIGOT_RESOURCES: "64348,9089"
+      DATAPACKS: "/datapacks"
       MOTD: "Ur welcome Sarita :)"
+      OPS: "saritaa,redaphid69"
     tty: true
     restart: unless-stopped
     volumes:
       # attach a directory relative to the directory containing this compose file
       - ./data/data:/data
       - ./data/mods:/mods
+      - ./data/datapacks:/datapacks
