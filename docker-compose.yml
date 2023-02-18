@@ -9,7 +9,7 @@ services:
       MEMORY: "8G"
       EULA: "TRUE"
       VERSION: "1.19.2"
-      TYPE: "SPIGOT"
+      TYPE: "PAPER"
       DATAPACKS: "/datapacks"
       MOTD: "Ur welcome Sarita :)"
       OPS: "saritaa,redaphid69"
